@@ -272,3 +272,130 @@ x==========x]
 [2023-11-21 08:43:48,361: INFO: main: >>>>>> stage Data Validation completed <<<<<<
 
 x==========x]
+[2023-11-21 09:43:04,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:43:04,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:43:04,780: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:43:04,780: INFO: common: created directory at: artifacts]
+[2023-11-21 09:43:04,786: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 09:43:04,813: INFO: 741865018: Splited data into training and test sets]
+[2023-11-21 09:43:04,813: INFO: 741865018: (1199, 12)]
+[2023-11-21 09:43:04,816: INFO: 741865018: (400, 12)]
+[2023-11-21 09:54:35,150: INFO: main: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-21 09:54:35,150: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:54:35,150: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:54:35,150: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:54:35,150: INFO: common: created directory at: artifacts]
+[2023-11-21 09:54:35,150: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-21 09:54:37,394: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FE2A:47A2:23AFEF:2A822D:655C3104
+Accept-Ranges: bytes
+Date: Tue, 21 Nov 2023 04:24:37 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1700540676.275492,VS0,VE1168
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 46649368d0e4577f35a5a3a954bec7459e07c21e
+Expires: Tue, 21 Nov 2023 04:29:37 GMT
+Source-Age: 0
+
+]
+[2023-11-21 09:54:37,409: INFO: main: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]
+[2023-11-21 09:54:37,409: INFO: main: >>>>>> stage Data Validation started <<<<<<]
+[2023-11-21 09:54:37,425: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:54:37,425: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:54:37,426: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:54:37,426: INFO: common: created directory at: artifacts]
+[2023-11-21 09:54:37,438: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-21 09:54:37,444: INFO: main: >>>>>> stage Data Validation completed <<<<<<
+
+x==========x]
+[2023-11-21 09:54:37,444: INFO: main: >>>>>> stage Data Validation started <<<<<<]
+[2023-11-21 09:54:37,453: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:54:37,453: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:54:37,454: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:54:37,454: INFO: common: created directory at: artifacts]
+[2023-11-21 09:54:37,454: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 09:54:37,457: ERROR: main: name 'train_test_split' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\SINDHU MADHICHERLA\OneDrive\Desktop\ML\Projects\MLFlow\main.py", line 31, in <module>
+    obj.main()
+  File "c:\users\sindhu madhicherla\onedrive\desktop\ml\projects\mlflow\src\mlProject\pipeline\stage_03_data_transformation.py", line 18, in main
+    raise e
+  File "c:\users\sindhu madhicherla\onedrive\desktop\ml\projects\mlflow\src\mlProject\pipeline\stage_03_data_transformation.py", line 16, in main
+    data_transformation.train_test_spliting()
+  File "c:\users\sindhu madhicherla\onedrive\desktop\ml\projects\mlflow\src\mlProject\components\data_transformation.py", line 19, in train_test_spliting
+    train, test = train_test_split(data)
+NameError: name 'train_test_split' is not defined
+[2023-11-21 09:55:48,886: INFO: main: >>>>>> stage Data Ingestion started <<<<<<]
+[2023-11-21 09:55:48,886: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:55:48,886: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:55:48,886: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:55:48,886: INFO: common: created directory at: artifacts]
+[2023-11-21 09:55:48,886: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-11-21 09:55:49,656: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: FE2A:47A2:23AFEF:2A822D:655C3104
+Accept-Ranges: bytes
+Date: Tue, 21 Nov 2023 04:25:49 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10223-MAA
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1700540750.698223,VS0,VE0
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 220ee5d623cd401b06cd3c45250ab938ed38949f
+Expires: Tue, 21 Nov 2023 04:30:49 GMT
+Source-Age: 72
+
+]
+[2023-11-21 09:55:49,661: INFO: main: >>>>>> stage Data Ingestion completed <<<<<<
+
+x==========x]
+[2023-11-21 09:55:49,661: INFO: main: >>>>>> stage Data Validation started <<<<<<]
+[2023-11-21 09:55:49,667: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:55:49,667: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:55:49,671: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:55:49,671: INFO: common: created directory at: artifacts]
+[2023-11-21 09:55:49,673: INFO: common: created directory at: artifacts/data_validation]
+[2023-11-21 09:55:49,678: INFO: main: >>>>>> stage Data Validation completed <<<<<<
+
+x==========x]
+[2023-11-21 09:55:49,678: INFO: main: >>>>>> stage Data Validation started <<<<<<]
+[2023-11-21 09:55:49,686: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-11-21 09:55:49,689: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-11-21 09:55:49,691: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-11-21 09:55:49,691: INFO: common: created directory at: artifacts]
+[2023-11-21 09:55:49,703: INFO: common: created directory at: artifacts/data_transformation]
+[2023-11-21 09:55:49,719: INFO: data_transformation: Splited data into training and test sets]
+[2023-11-21 09:55:49,723: INFO: data_transformation: (1199, 12)]
+[2023-11-21 09:55:49,723: INFO: data_transformation: (400, 12)]
+[2023-11-21 09:55:49,724: INFO: main: >>>>>> stage Data Validation completed <<<<<<
+
+x==========x]
