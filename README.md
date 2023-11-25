@@ -66,7 +66,7 @@ open up you local host and port
 MLFLOW_TRACKING_URI=https://dagshub.com/sindhu.madicherla/MLFlow.mlflow \
 MLFLOW_TRACKING_USERNAME=sindhu.madicherla \
 MLFLOW_TRACKING_PASSWORD=39c1acd6a406fa680fb07249a1285a5ffcf53cfe \
-
+conda env config vars list
 conda env config vars set MLFLOW_TRACKING_USERNAME=sindhu.madicherla
 
 python script.py

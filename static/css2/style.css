@@ -19,13 +19,13 @@ body {
 	-webkit-align-items: center;
 }
 .form-v9-content  {
-	width: 975px;
+	width: 100%;
 	border-radius: 15px;
 	-o-border-radius: 15px;
 	-ms-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
-	margin: 185px 0;
+	margin: 10px 0;
 	font-family: 'Nunito', sans-serif;
 	color: #fff;
 	font-weight: 700;
@@ -33,7 +33,7 @@ body {
 	position: relative;
 }
 .form-v9-content .form-detail {
-    padding: 30px 135px 30px 100px;
+    padding: 0 135px 30px 100px;
 	position: relative;
 }
 .form-v9-content .form-detail h2 {
@@ -46,7 +46,7 @@ body {
 .form-v9-content .form-detail h2::after {
 	background: #fff;
 	width: 73px;
-	height: 3px;
+	height: 3	px;
 	content: "";
 	position: absolute;
 	top: 100%;
